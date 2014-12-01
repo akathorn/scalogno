@@ -1,0 +1,10 @@
+language: scala
+scala:
+   - 2.10.2
+
+before_install:
+    - ./install-z3.sh
+    - ./install-scala-z3.sh
+
+before_script:
+    - export PATH=$PATH:$PWD/z3/build/z3
